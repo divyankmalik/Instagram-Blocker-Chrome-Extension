@@ -19,4 +19,4 @@ This project is perfect for anyone looking to reduce distractions and build bett
 Clone the repository or download the ZIP file, then extract it to a folder on your computer.
 
 ```bash
-git clone https://github.com/yourusername/instagram-blocker.git
+git clone https://github.com/yourusername/IG-BLOCKER.git
