@@ -1,0 +1,17 @@
+[
+    {
+      "id": 1,
+      "priority": 1,
+      "action": {
+        "type": "redirect",
+        "redirect": {
+          "url": "file:///C:/Users/divya/OneDrive/Desktop/IG-BLOCKER/index.html"
+        }
+      },
+      "condition": {
+        "urlFilter": "https://www.instagram.com/*",
+        "resourceTypes": ["main_frame"]
+      }
+    }
+  ]
+  
