@@ -7,6 +7,7 @@ This project is perfect for anyone looking to reduce distractions and build bett
 Blocks Instagram: Redirects all attempts to visit Instagram to a custom page.
 Customizable Redirect: Choose the page you want to display when Instagram is blocked (e.g., a motivational message or a timer).
 Simple and Lightweight: Built using the latest Chrome Manifest V3 for optimized performance.
+
 🛠 How to Use
 Follow these steps to set up and use the Instagram Blocker extension:
 
@@ -14,27 +15,30 @@ Follow these steps to set up and use the Instagram Blocker extension:
 Clone the repository or download the ZIP file, then extract it to a folder on your computer.
 
 bash
-Copy code
+
 git clone https://github.com/yourusername/instagram-blocker.git
+
 2. Set Up Your Blocker Page
 Edit the index.html file in the project folder to customize the message or content you want to display when Instagram is blocked. You can:
 
 Add motivational text.
 Include a countdown timer.
 Display helpful productivity tips.
+
 3. Load the Extension in Chrome
 Open Chrome and navigate to chrome://extensions/.
 Enable Developer Mode (toggle in the top-right corner).
 Click Load Unpacked and select the project folder containing the manifest.json file.
 The extension will now appear in your list of installed extensions.
-4. Test the Extension
+
+5. Test the Extension
 Open a new tab and visit https://www.instagram.com/.
 You should be redirected to the custom blocker page.
 ⚙️ Customization
 To block other distracting websites (e.g., Twitter, Facebook), update the rules.json file:
 
 json
-Copy code
+
 {
   "id": 2,
   "priority": 1,
@@ -58,11 +62,11 @@ File URL Restrictions:
 
 If the file:// redirect does not work, use a local HTTP server:
 bash
-Copy code
+
 python -m http.server 8000
 Then update the redirect URL in rules.json:
 json
-Copy code
+
 "redirect": { "url": "http://localhost:8000/index.html" }
 Reload Extension:
 
